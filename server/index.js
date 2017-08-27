@@ -36,6 +36,14 @@ app.use('/api/', api);
 api.get('/test', apiRoute.test);
 api.get('/testjsonapi', apiRoute.testJsonApi);
 
+const CRAWLCTRL = require('./ctrls/crawl.js')
+
+
+api.get('/test', CRAWLCTRL.testPoint)
+
+
+
+
 /******** TEST API	**************************************/
 
 /*************************************************************************************

@@ -1,6 +1,7 @@
 var request = require('request');
 var cheerio = require('cheerio');
 var rp = require('request-promise')
+var app = require('./index.js')
 
 var internalLinks = [];
 
@@ -34,29 +35,14 @@ var scrapeLinks = function(scrapeThis){
 
 // end of request
   })
-	
+
   .then(function(){
 		console.log("this is the .then function output")
 
-})	
+})
 
 
 }
 
 // run the function
 scrapeLinks(scrapeThis);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
